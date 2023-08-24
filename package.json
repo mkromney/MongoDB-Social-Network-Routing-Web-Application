@@ -1,5 +1,5 @@
 {
-  "name": "Module 18 Homework",
+  "name": "18",
   "version": "1.0.1",
   "description": "Mongoose back-end - Develop",
   "main": "index.js",
@@ -15,6 +15,7 @@
     "mongoose": "^7.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.9"
+    "nodemon": "^2.0.9",
+    "eslint": "^7.9.0"
   }
 }
