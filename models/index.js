@@ -1,6 +1,8 @@
+// Imports the User model. //
 const User = require('./User');
-const Thought = require('./Thought');
-// const Reaction = require('./Reaction')
-// const Friend = require('./Friend')
 
-module.exports = { User, Thought, }; // Reaction, Friend };
+// Imports the Thought model. // 
+const Thought = require('./Thought');
+
+// Exports the User and Thought models as an object. //
+module.exports = { User, Thought };
