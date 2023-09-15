@@ -16,12 +16,12 @@ router.route('/').get(getUsers).post(createUser);
 router.route('/:userId').get(getSingleUser).delete(deleteUser);
 
 // PUT or update a user by its id.
-router.route('/:userId').post(updateUser);
+router.route('/:userId').put(updateUser);
 
-// POST a new friend:  /api/users/:userId/friends
-router.route('/:userId/friends').post(addFriend);
+// POST a new friend by user id:  /api/users/:userId/friends/:friendId
+router.route('/:userId/friends/:friendId').post(addFriend);
 
-// DELETE to remove a friend:  /api/users/:userId/friends/:friendId
+// DELETE to remove a friend by user id:  /api/users/:userId/friends/:friendId
 router.route('/:userId/friends/:friendId').delete(removeFriend);
 
 module.exports = router;
